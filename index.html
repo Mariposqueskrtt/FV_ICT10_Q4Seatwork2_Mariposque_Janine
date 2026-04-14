@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class List</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: rgb(181, 217, 205);
+            text-align: center;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        h1, h2 {
+            color: rgb(86, 130, 122);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Grade 10 Classmates System</h1>
+
+<input id="name" placeholder="Name"><br>
+<input id="section" placeholder="Section"><br>
+<input id="subject" placeholder="Favorite Subject"><br>
+
+<button py-click="add_classmate">Add Classmate</button>
+<button py-click="show_list">Show List</button>
+
+<h2>Classmate List:</h2>
+<div id="list"></div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
